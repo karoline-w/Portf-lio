@@ -1,0 +1,277 @@
+/*portifolio*/
+.escritadiv1{
+    color: var(--cor-texto);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    display:flex;
+    flex-direction: column;
+    /* padding: 0px 50px;
+    margin: 0px 0px; */
+}
+
+.hh1{
+    text-shadow: 2px 3px 2px rgb(120, 3, 50); /* Sombra, 2px para a direita, 3px para baixo e 2px de desfoque */
+}
+
+:root{/*uma variavel que facilita na hora de mudar a cor de alguns elementos*/
+    --cor-texto: rgb(255, 255, 255);/*cor de fundo de tds os textos*/
+    --cor-borda: rgb(255, 255, 255);/*cor de fundo das bordas(menos da foto)*/
+    --cor-fundo-p: rgb(173, 3, 72);/*cor de fundo do portifolio*/
+    --cor-hrefr-p:rgb(120, 3, 50);/*cor do rodape e cabecalho no portifolio*/
+    --cor-hrefr-sm: rgb(49, 3, 62);/*cor do rodape e cabecalho do sobre mim*/
+    --cor-hrefr-c: rgb(11, 18,58);/*cor do rodape e cabecalho do curriculo*/
+}
+
+body{
+    display: flex;/*colocado para separar o texto para left and the images to the right*/
+    flex-direction: column;
+    gap: 5px;/*para dar um espaço específico entre os itens*/
+    justify-content: space-evenly;/*utilizado para colocar espaço entre os itens de forma igual*/ 
+    background-color: var(--cor-fundo-p);
+    margin: 0;
+    padding: 0;
+}
+
+.imgs{
+    display: flex;/*mexe nas imagens*/
+    flex-direction: column;/*coloca as imagens de baixo para cima*/
+    align-self: flex-end;/*não sei uma explicação, só sei que fiz*//*edit:agr eu sei*/
+}
+
+.paragrafos{
+    color: var(--cor-texto);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pdiv2{
+    color: var(--cor-texto);
+    text-align: right; /* deixa o texto do lado direito da tela*/
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outrasimgs{
+    display: flex;/*mexe nas imagens*/
+    align-items: center;/*coloca os itens no meio do site*/
+    justify-content: space-evenly;/*faz com que o conteúdo fique distribuido de forma que o espaço no meio fique igual*/
+}
+
+.ftperfil{
+    border: 3px solid var(--cor-borda);/*borda*/
+}
+
+/*width, largura.height, altura*/
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.hr{
+   background-color: var(--cor-hrefr-p); 
+   color: var(--cor-texto);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 55px;
+   position: absolute;/*deixa o header no lugar*/
+   top: 0; /*deixa o header em cima*/
+   width: 100%; /*comprimento do header*/
+}
+
+.fr{
+    background-color: var(--cor-hrefr-p);
+    color: var(--cor-texto);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 35px;
+   position: fixed;/*mexe com  tela*/
+   bottom: 0; /*embaixo da tela*/
+   width: 100%; /*de um lado da tela até o outro*/
+}
+
+.linkcabeca{
+    background-color: rgb(120, 3, 50);
+    border: 2px solid var(--cor-borda);/*borda*/
+    padding: 10px 45px;/*primeiro valor é o espaço entre a borda e a escrita (altura), e o segundo deu uma esticada*/
+    text-decoration: none;/*tira a linha do link*/
+    color: var(--cor-texto);/*muda a cor do texto*/
+    border-radius: 5px;/*arredonda a borda*/
+    transition: 1s;
+}
+
+.linkcabeca:hover{/*hover faz mudar o estilo/cor quando o mouse passa em cima*/
+    background-color: rgb(230, 158, 186);/*cor que vai ficar quando passar o mouse em cima*/
+    transition: 1s;/*tempode transição de cor do hover*/
+    padding: 15px 50px;/*15px altura/ 50px largura*/
+}
+
+/*sobre mim*/
+.hrsm{
+   background-color: var(--cor-hrefr-sm); 
+   color: var(--cor-texto);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 55px;
+   position: absolute; /*intacta no lugar*/
+   top: 0;/*em cima na tela*/
+   width: 100%; /*de um lado ao outro da tela*/
+}
+
+.frsm{
+    background-color: var(--cor-hrefr-sm);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    position: fixed;/* acompanha a tela*/
+    bottom: 0;/*na final da tela*/
+    width: 100%; /* de um lado ao outro*/
+}
+
+
+.linkcabecasm{
+    background-color: rgb(49, 3, 62);
+    border: 2px solid var(--cor-borda);/*borda*/
+    padding: 10px 45px;/*primeiro valor é o espaço entre a borda e a escrita, e o segundo deu uma esticada*/
+    text-decoration: none;/*tira a linha do link*/
+    color: var(--cor-texto);/*muda a cor do texto*/
+    border-radius: 5px;/*arredonda a borda*/
+    transition: 1s;
+}
+
+.linkcabecasm:hover{/*hover faz mudar o estilo/cor quando o mouse passa em cima*/
+    background-color: rgb(192, 118, 212);/*cor que vai ficar quando passar o mouse em cima*/
+    transition: 1s;/*tempode transição de cor do hover*/
+    padding: 15px 50px;/*15px altura/ 50px largura*/
+}
+
+.divsm{
+    display: flex;
+    flex-direction:column;  
+    margin: 50px; /*margem*/
+}
+
+.h_um{
+    font-family: 'Times New Roman', Times, serif; /*fonte*/
+    font-size: 50px; /*tamanho da escrita*/
+    color: rgb(223, 170, 243);
+    text-shadow: 2px 3px 2px rgb(49, 3, 62); /* Sombra, 2px para a direita, 3px para baixo e 2px de desfoque */
+}
+
+.p_1{
+    font-size: 30px;
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    border: 5px solid rgb(49, 3, 62);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+/*curriculo*/
+.hrc{
+   background-color: var(--cor-hrefr-c); 
+   color: var(--cor-texto);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 55px;/*altura do header*/
+   position: absolute;/*deixa o header em cima da tela*/
+   top: 0; /*deixa o header em cima na tela, porém intacto no mesmo lugar sem ele se mexer*/
+   width: 100%;/*faz com que o header estique até ambos os lados da tela*/
+}
+
+.frc{
+    background-color: var(--cor-hrefr-c);
+    color: var(--cor-texto);
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 35px;/*altura do footer*/
+   position: fixed;/*deixa o footer em baixo na tela, mas se mexe com ela*/
+   bottom: 0;/*deixa o footer em baixo na tela*/
+   width: 100%;/*faz com que o footer estique até ambos os lados da tela*/
+}
+
+.linkcabecac{
+    background-color: rgb(11, 18, 58);
+    border: 2px solid var(--cor-borda);/*borda*/
+    padding: 10px 45px;/*primeiro valor é o espaço entre a borda e a escrita, e o segundo deu uma esticada*/
+    text-decoration: none;/*tira a linha do link*/
+    color: var(--cor-texto);/*muda a cor do texto*/
+    border-radius: 5px;/*arredonda a borda*/
+    transition: 1s;
+}
+
+.linkcabecac:hover{/*hover faz mudar o estilo/cor quando o mouse passa em cima*/
+    background-color: rgb(140, 157, 251);/*cor que vai ficar quando passar o mouse em cima*/
+    transition: 1s;/*tempode transição de cor do hover*/
+    padding: 15px 50px;/*15px altura/ 50px largura*/
+}
+
+.divc{
+    display: flex;
+    flex-direction:column;  
+    margin: 1%;
+    background-color: rgb(59, 72, 146);
+    border: 3px solid rgb(11, 18, 58);
+    padding: 0px 150px;    
+    height: 100%;
+}
+
+.h1c{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(164, 177, 248);
+    text-shadow: 2px 3px 2px rgb(23, 33, 92); /* Sombra preta, 2px para a direita, 3px para baixo e 2px de desfoque */
+}
+
+.p1c{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--cor-texto);
+    
+}
+
+.pctamanho{
+    margin: 0%;
+    font-size: 15px
+}
+
+.h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(164, 177, 248);
+
+    /*jeito mais facil de contorno abaixo*/
+    /*-webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgb(37, 48, 112)*/
+    
+    /*text-shadow: 1px 1px 0 #000,
+               -1px 1px 0 #000,
+               -1px -1px 0 #000,
+               1px -1px 0 #000;*/
+     /*jeito mais dificil de contorno a cima*/
+}
+
+.mondrone{
+    padding: 10px 0px; /*primeiro valor é altura, segundo é largura*/
+}
+
+.ulysses{
+    padding: 10px 0px;
+}
+
+.euclides{
+    padding: 10px 0px;
+}
+
+.saberdainfancia{
+    padding: 10px 0px;
+}
