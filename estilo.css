@@ -1,5 +1,5 @@
 /*portifolio*/
-.escritadiv1{
+.escritadiv1{ /*engloba todos as escritas do div1*/
     color: var(--cor-texto);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
@@ -9,7 +9,7 @@
     margin: 0px 0px; */
 }
 
-.hh1{
+.hh1{ /*h1 da primeira página*/
     text-shadow: 2px 3px 2px rgb(120, 3, 50); /* Sombra, 2px para a direita, 3px para baixo e 2px de desfoque */
 }
 
@@ -32,26 +32,26 @@ body{
     padding: 0;
 }
 
-.imgs{
+.imgs{ /*todas as imgs entao dentro desse div*/
     display: flex;/*mexe nas imagens*/
     flex-direction: column;/*coloca as imagens de baixo para cima*/
     align-self: flex-end;/*não sei uma explicação, só sei que fiz*//*edit:agr eu sei*/
 }
 
-.paragrafos{
+.paragrafos{ /*os dois primeiros paragrafos do div1*/
     color: var(--cor-texto);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.pdiv2{
+.pdiv2{ /*paragrafo do div2*/
     color: var(--cor-texto);
     text-align: right; /* deixa o texto do lado direito da tela*/
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.outrasimgs{
+.outrasimgs{ /*icones do apps*/
     display: flex;/*mexe nas imagens*/
     align-items: center;/*coloca os itens no meio do site*/
     justify-content: space-evenly;/*faz com que o conteúdo fique distribuido de forma que o espaço no meio fique igual*/
@@ -63,13 +63,13 @@ body{
 
 /*width, largura.height, altura*/
 
-main{
+main{ 
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
 }
 
-.hr{
+.hr{ /*header index*/
    background-color: var(--cor-hrefr-p); 
    color: var(--cor-texto);
    display: flex;
@@ -81,7 +81,7 @@ main{
    width: 100%; /*comprimento do header*/
 }
 
-.fr{
+.fr{ /*footer index*/
     background-color: var(--cor-hrefr-p);
     color: var(--cor-texto);
     display: flex;
@@ -93,7 +93,7 @@ main{
    width: 100%; /*de um lado da tela até o outro*/
 }
 
-.linkcabeca{
+.linkcabeca{ /*botoes do header*/
     background-color: rgb(120, 3, 50);
     border: 2px solid var(--cor-borda);/*borda*/
     padding: 10px 45px;/*primeiro valor é o espaço entre a borda e a escrita (altura), e o segundo deu uma esticada*/
@@ -110,7 +110,7 @@ main{
 }
 
 /*sobre mim*/
-.hrsm{
+.hrsm{ /*header do sobre mim*/
    background-color: var(--cor-hrefr-sm); 
    color: var(--cor-texto);
    display: flex;
@@ -122,7 +122,7 @@ main{
    width: 100%; /*de um lado ao outro da tela*/
 }
 
-.frsm{
+.frsm{ /*footer do sobre mim*/
     background-color: var(--cor-hrefr-sm);
     color: var(--cor-texto);
     display: flex;
@@ -135,7 +135,7 @@ main{
 }
 
 
-.linkcabecasm{
+.linkcabecasm{ /*botoes do header*/
     background-color: rgb(49, 3, 62);
     border: 2px solid var(--cor-borda);/*borda*/
     padding: 10px 45px;/*primeiro valor é o espaço entre a borda e a escrita, e o segundo deu uma esticada*/
@@ -151,20 +151,20 @@ main{
     padding: 15px 50px;/*15px altura/ 50px largura*/
 }
 
-.divsm{
+.divsm{ /*div que engloba todo o conteudo*/
     display: flex;
     flex-direction:column;  
     margin: 50px; /*margem*/
 }
 
-.h_um{
+.h_um{ /*a escrita "sobre mim"*/
     font-family: 'Times New Roman', Times, serif; /*fonte*/
     font-size: 50px; /*tamanho da escrita*/
     color: rgb(223, 170, 243);
     text-shadow: 2px 3px 2px rgb(49, 3, 62); /* Sombra, 2px para a direita, 3px para baixo e 2px de desfoque */
 }
 
-.p_1{
+.p_1{ /*todo o paragrafo*/
     font-size: 30px;
     color: var(--cor-texto);
     font-family: Arial, Helvetica, sans-serif;
@@ -175,7 +175,7 @@ main{
 }
 
 /*curriculo*/
-.hrc{
+.hrc{ /*header curriculo*/
    background-color: var(--cor-hrefr-c); 
    color: var(--cor-texto);
    display: flex;
@@ -187,7 +187,7 @@ main{
    width: 100%;/*faz com que o header estique até ambos os lados da tela*/
 }
 
-.frc{
+.frc{ /*footer curriculo*/
     background-color: var(--cor-hrefr-c);
     color: var(--cor-texto);
     display: flex;
@@ -199,7 +199,7 @@ main{
    width: 100%;/*faz com que o footer estique até ambos os lados da tela*/
 }
 
-.linkcabecac{
+.linkcabecac{ /*botoes do header*/
     background-color: rgb(11, 18, 58);
     border: 2px solid var(--cor-borda);/*borda*/
     padding: 10px 45px;/*primeiro valor é o espaço entre a borda e a escrita, e o segundo deu uma esticada*/
@@ -215,7 +215,7 @@ main{
     padding: 15px 50px;/*15px altura/ 50px largura*/
 }
 
-.divc{
+.divc{ /*div que engloba todo o conteudo*/
     display: flex;
     flex-direction:column;  
     margin: 1%;
@@ -225,42 +225,33 @@ main{
     height: 100%;
 }
 
-.h1c{
+.h1c{ /*meu nome (h1 do curriculo)*/
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     color: rgb(164, 177, 248);
     text-shadow: 2px 3px 2px rgb(23, 33, 92); /* Sombra preta, 2px para a direita, 3px para baixo e 2px de desfoque */
 }
 
-.p1c{
+.p1c{ /*todos os p's menos os h2 as letras menores*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: var(--cor-texto);
     
 }
 
-.pctamanho{
+.pctamanho{ /*exclusivo para as letras menores*/
     margin: 0%;
     font-size: 15px
 }
 
-.h2{
+.h2{ /*todos os h2*/
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     color: rgb(164, 177, 248);
-
-    /*jeito mais facil de contorno abaixo*/
-    /*-webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: rgb(37, 48, 112)*/
-    
-    /*text-shadow: 1px 1px 0 #000,
-               -1px 1px 0 #000,
-               -1px -1px 0 #000,
-               1px -1px 0 #000;*/
-     /*jeito mais dificil de contorno a cima*/
 }
 
-.mondrone{
+/*div para cada escrita*/
+.mondrone{ 
     padding: 10px 0px; /*primeiro valor é altura, segundo é largura*/
 }
 
